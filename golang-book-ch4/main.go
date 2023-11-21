@@ -7,13 +7,7 @@ const y string = "const"
 func main() {
 	// strings()
 
-	fmt.Print("Enter a number: ")
-	var input float64
-	fmt.Scanf("%f", &input)
-
-	output := input * 2
-
-	fmt.Println(output)
+	temp()
 }
 
 func strings() {
@@ -51,4 +45,14 @@ func f() {
 	// y = "break" // can't be done gives error:
 	// cannot assign to y (neither addressable nor a map index expression)
 	fmt.Println(y)
+}
+
+func temp() {
+	fmt.Print("Enter a temperature: ")
+	var input float64
+	fmt.Scanf("%f", &input)
+
+	output := (input - 32) * 5/9
+
+	fmt.Println(output)
 }
